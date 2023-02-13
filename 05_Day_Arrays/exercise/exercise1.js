@@ -14,9 +14,27 @@ console.log(`Last Company: ${itCompanies[itCompanies.length - 1]}`);
 itCompanies.forEach(element => {
     console.log(element);
 });
-let i = 0;
 for (let index = 0; index < itCompanies.length; index++) {
-    itCompanies[index] = itCompanies[index].toUpperCase();
+    console.log(itCompanies[index].toUpperCase());
 }
-console.log(itCompanies);
-console.log(`Array to Sentence: ${itCompanies.toString()}`);
+console.log(`Array to Sentence: ${itCompanies.toString()} are big IT companies`);
+let company = 'Twitter';
+console.log(`${company} is${(itCompanies.indexOf(company) !== -1 ) ? '' : ' not'} in itCompanies array`);
+let filteredCompanies = [];
+for (let index = 0; index < itCompanies.length; index++) {
+    if(Array.isArray(itCompanies[index].match('o'))){
+        if(itCompanies[index].match(/o/gi).length > 1){
+            filteredCompanies.push(itCompanies[index]);
+        }
+    }
+}
+console.log(filteredCompanies);
+console.log(`Sorted Items ${itCompanies.sort()}`);
+console.log(`Reversed Items ${itCompanies.reverse()}`);
+console.log(`Spliced First 3: ${itCompanies.splice(0,3)}`);
+console.log(`Spliced Last 3: ${itCompanies.splice(itCompanies.length - 3, itCompanies.length - 1)}`);
+console.log(`Spliced Middle: ${itCompanies.splice(Math.floor(itCompanies.length / 2))}`);
+filteredCompanies.shift();
+console.log(filteredCompanies);
+filteredCompanies.pop();
+console.log(filteredCompanies);
