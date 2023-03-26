@@ -11,7 +11,7 @@
 		<h1>Calculate a weight of an object on a planet</h1>
 
 		<input type="text" id="mass" placeholder="Mass in Kilogram" />
-		<select>
+		<select onchange="getSelected(this)">
 			<option value='none'>--select planet-- </option>
 		</select>
 		<button>Calculate weight</button>
@@ -22,17 +22,10 @@
 			<div class="flex-item image">
 				<img src='./images/earth.png' class="planet-image" />
 			</div>
+			<input type="hidden" id="selected-planet">
 			<div class="flex-item description"></div>
-
 		</div>
-
-
 	</main>
-
-
-
-
-
 	<script src="./scripts/main.js"></script>
 </body>
 
