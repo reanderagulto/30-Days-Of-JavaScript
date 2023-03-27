@@ -56,12 +56,24 @@ button:hover{
     font-size: 20px;
 }
 
-#stat div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
+#stat table {
+    width: 100%;
+    margin: auto;
+}
+
+#stat table td{
+    padding: 10px 0;
+}
+
+td.progress-bar {
+    width: 500px;
+}
+
+.progress {
+    content: '';
+    background-color: var(--color);
+    height: 40px;
+    border-radius: 5px;
 }
 
 #stat div .no{
