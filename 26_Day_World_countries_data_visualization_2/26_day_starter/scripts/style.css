@@ -68,3 +68,42 @@ input#search-box {
     padding: 5px 20px;
     text-align: center;
 }
+
+.results-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1280px;
+    margin: auto;
+    padding: 75px 0;
+}
+
+.results-wrapper .item{
+    background-image: url(../images/map_image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.results-wrapper .item::after{
+    content: '';
+    background-color: #c3c3c3;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 5px;
+}

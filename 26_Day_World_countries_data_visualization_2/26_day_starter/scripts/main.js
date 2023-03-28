@@ -7,7 +7,8 @@ const resultWrapper = document.querySelector('.results-wrapper')
 let searchBy = ''
 
 const returnResult = (keyword, searchBy) => {
-    return countries.find(element => element.match(`/${searchBy}${keyword}/g`));
+    ret = new RegExp(`${searchBy}${keyword}`, 'gi')
+    return countries.filter(element => element.match(ret))
 }
 
 startWord.addEventListener('click', e => {    
@@ -22,6 +23,12 @@ anyWord.addEventListener('click', e => {
 })
 
 searchBox.addEventListener('keypress', e => {
-    data = returnResult(e.key, searchBy)
-    console.log(data);
+    data = returnResult(searchBox.value + e.key , searchBy)
+    resultWrapper.innerHTML = ''
+    data.map((element, index) => {
+        innerDiv = document.createElement('div')
+        innerDiv.textContent = element
+        innerDiv.classList.add('item')
+        resultWrapper.appendChild(innerDiv)
+    })
 })
