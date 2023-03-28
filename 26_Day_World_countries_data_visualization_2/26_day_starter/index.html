@@ -3,12 +3,26 @@
 
 <head>
 	<title>30DaysOfJavaScript:11 Day </title>
+	<link rel="stylesheet" href="./scripts/style.css">
 </head>
 
 <body>
-	<h1>30DaysOfJavaScript:11 Day</h1>
-	<h2>Destructuring and Spread</h2>
-
+	<header>
+		<div class="header-wrapper">
+			<h1>World Countries List</h1>
+			<p>Total Number of Countries: <span class="total-countries">0</span></p>
+			<p class="letter-contains"></p>
+			<div class="search-controls">
+				<button class="btn-search-by" id="starting-word">Starting Word</button>
+				<button class="btn-search-by" id="any-word">Search with Any Word</button>
+				<button id="sort">Sort</button>
+			</div>
+			<input type="text" name="" id="search-box" />
+		</div>
+	</header>
+	<main>
+		<div class="results-wrapper"></div>
+	</main>
 	<script src="./data/countries.js"></script>
 	<script src="./scripts/main.js"></script>
 
