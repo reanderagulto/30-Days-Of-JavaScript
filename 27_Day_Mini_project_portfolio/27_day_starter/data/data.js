@@ -2,27 +2,27 @@ const personal_info = {
 	professions: [
 		{
 			name: 'Instructor',
-			emoji: "🔥",
+			emoji: "📖",
 		}, 
 		{
 			name: 'Motivational Speaker',
-			emoji: "",
+			emoji: "🔥",
 		}, 
 		{
 			name: 'Programmer',
-			emoji: "",
+			emoji: "💻",
 		},
 		{
 			name: 'Motivator',
-			emoji: "",
+			emoji: "🔥",
 		},		
 		{
 			name:'Content Creator',
-			emoji:"",
+			emoji:"🗒️",
 		},
 		{
 			name: 'Educator',
-			emoji:""
+			emoji:"☘️"
 		}
 	],
 	languages: [
