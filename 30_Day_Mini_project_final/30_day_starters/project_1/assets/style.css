@@ -1,0 +1,48 @@
+body{
+    all: unset;
+}
+
+header{
+    text-align: center;
+}
+
+.wrapper{
+    width: 800px;
+    margin: auto;
+}
+
+.form-control-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.form-control-group label {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-control-group input {
+    all: unset;
+    border: 1px solid black;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.form-control-group .btn {
+    display: flex;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    margin: 10px 0;
+}
+
+.form-control-group span {
+    color: red;
+    transition: all 0.5s ease-out;
+}
